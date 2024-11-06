@@ -1,3 +1,4 @@
+import LogoutButton from "components/logout-button";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -7,5 +8,10 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <>Start Point of Insupagram project</>;
+  return (
+    <main className="w-full h-screen flex flex-col items-center justify-center">
+      <h1 className="">Welcome {"Username!"}!</h1>
+      <LogoutButton/>
+    </main>
+  );
 }
